@@ -1,0 +1,154 @@
+.zsp-grid,
+.zsp-grid > .zsp-grid {
+  list-style: none;
+  margin: 0 -7px;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+.zsp-grid,
+.zsp-grid > .zsp-grid,
+.zsp-grid > .flex {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.zsp-grid > * {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  max-width: 100%;
+}
+.zsp-grid > *,
+.zsp-grid > .zsp-grid {
+  list-style: none;
+  margin: 0;
+  float: none;
+  padding-left: 7px;
+  padding-right: 7px;
+  box-sizing: border-box;
+}
+.zsp-grid > .col-3 {
+  -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%;
+  max-width: 25%;
+}
+.zsp-grid > .col-4 {
+  -webkit-flex-basis: 33.33333333%;
+      -ms-flex-preferred-size: 33.33333333%;
+          flex-basis: 33.33333333%;
+  max-width: 33.33333333%;
+}
+.zsp-grid > .col-6 {
+  -webkit-flex-basis: 50%;
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+  max-width: 50%;
+}
+.zsp-grid > .col-8 {
+  -webkit-flex-basis: 66.66666667%;
+      -ms-flex-preferred-size: 66.66666667%;
+          flex-basis: 66.66666667%;
+  max-width: 66.66666667%;
+}
+.zsp-grid > .col-9 {
+  -webkit-flex-basis: 75%;
+      -ms-flex-preferred-size: 75%;
+          flex-basis: 75%;
+  max-width: 75%;
+}
+.zsp-grid > .col-12 {
+  -webkit-flex-basis: 100%;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+  max-width: 100%;
+}
+.zsp-grid {
+  margin-top: 15px;
+}
+.zsp-widget-row {
+  margin: 0 0 20px;
+}
+.zsp-widget-row .label {
+  margin: 0 0 5px;
+  font-weight: 700;
+}
+.zsp-widget-row .zsp-description {
+  font-style: normal;
+  color: #72777c;
+  margin: 0;
+  padding: 0;
+}
+.zsp-widget-tabs-header {
+  display: block;
+  width: 100%;
+  margin-bottom: -2px;
+  padding: 0 7px;
+  position: relative;
+  z-index: 3;
+}
+.zsp-widget-tabs-header span {
+  position: relative;
+  display: inline-block;
+  padding: 7px 10px;
+  border: 1px solid transparent;
+  margin-right: -1px;
+  font-weight: 700;
+  font-size: 12px;
+  z-index: 1;
+  cursor: pointer;
+}
+.zsp-widget-tabs-header span.wp-ui-text-highlight {
+  border-color: #ddd;
+  border-bottom: 0;
+  z-index: 3;
+  background: #fafafa;
+}
+.zsp-widget-tabs-header span:not(.wp-ui-text-highlight) {
+  color: #777;
+}
+.zsp-widget-tabs-header span:not(.wp-ui-text-highlight):hover {
+  color: #444;
+}
+.zsp-grid.zsp-widget-tab {
+  position: relative;
+  margin: 0 0 20px;
+  padding: 7px;
+  padding-top: 20px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  z-index: 1;
+  display: none;
+}
+.zsp-grid.zsp-widget-tab.active {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.zsp-single-brand {
+  position: relative;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-bottom: 10px;
+}
+.zsp-single-brand > .zsp-delete-single-brand,
+.zsp-single-brand > .zsp-move-single-brand {
+  position: absolute;
+  display: inline-block;
+  top: 20px;
+}
+.zsp-single-brand > .zsp-delete-single-brand {
+  right: 0;
+  color: red;
+}
+.zsp-single-brand > .zsp-move-single-brand {
+  left: 0;
+  color: #888;
+  cursor: move;
+}
+.zsp-single-brand .brand-label {
+  font-weight: 700;
+}
